@@ -23,7 +23,7 @@ Tensorflow version 1.4
 During 5,000 iterations, every 100 iteration, we evaluated the model using a small validation set and saved the best performing one as our final model. In essence, model may start over-fitting at some point and this will reflect to our validation set's performance. We chose to use this method instead of early stopping, in hopes to catch a better local optimum.
 Best model from validation set yielded 95.59% test accuracy.
 <p align="center">
-  <img src="notebook_images/test_accuracy.jpg"/>
+  <img src="notebook_images/test_accuracy.JPG"/>
 </p>
 
 For this paper, we tried 7 different models with slightly different architectures and compared their performances. We believe that all those models should yield similar test accuracies if trained enough (for instance deeper models with high units should take more iteration to converge so comparing all of them at 5,000 iterations may not be best method but we did speed vs accuracy trade off by cutting the training at 5000)
